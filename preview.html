@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Button</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+
+    .notion-button {
+      padding: 6px 10px;
+      font-size: 13px;
+      border-radius: 6px;
+
+      background: rgb(47, 47, 47);
+      color: rgba(255, 255, 255, 0.9);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+
+      transition: background 0.15s ease, border 0.15s ease;
+      user-select: none;
+    }
+
+    .notion-button:hover {
+      background: rgb(58, 58, 58);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    
+    .notion-button:active {
+      background: rgb(68, 68, 68);
+    }
+  </style>
+</head>
+
+<body>
+  <button class="notion-button" onclick="handleClick()">
+    study page
+  </button>
+
+  <script>
+    function handleClick() {
+      console.log("study page clicked");
+    }
+  </script>
+</body>
+</html>
